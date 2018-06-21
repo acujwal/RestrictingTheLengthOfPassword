@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+<div class="container mt-5">
+
+<h2>Check your Password</h2>
+
+    Password:<br>
+    <input type="text" name="Password"  id="password" class="form-control">
+    <br><br>
+    <button  onclick="verifyPassword()" class="btn btn-lg btn-success" >Check Passowrd</button>
+
+</div>
+
+<script>
+    function verifyPassword() {
+        var password = $('#password').val();
+        if (password.length > 15)
+        {
+            alert('That password is too long.');
+        }
+        alert("that's a good password thanks");
+    }
+</script>
+
+</body>
+</html>
